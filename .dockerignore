@@ -8,11 +8,9 @@
 vendor
 
 # Runtime
-backend/runtime
-common/runtime
-frontend/runtime
-console/runtime
+app/runtime
+api/runtime
 
 # Assets
-backend/web/assets
-frontend/web/assets
+app/web/assets
+api/web/assets
