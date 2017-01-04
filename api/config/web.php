@@ -1,7 +1,7 @@
 <?php
 
-return [
-    'homeUrl' => 'http://service-storage.dev',
+$config = [
+    'homeUrl' => Yii::getAlias('@apiUrl'),
     'controllerNamespace' => 'api\controllers',
     'defaultRoute' => 'api/v1/instances',
     'modules' => [
@@ -13,3 +13,5 @@ return [
         ]
     ]
 ];
+
+return $config;

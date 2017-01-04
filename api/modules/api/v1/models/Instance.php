@@ -11,7 +11,7 @@ class Instance extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'country';
+        return 'instance';
     }
 
     /**
@@ -19,7 +19,7 @@ class Instance extends ActiveRecord
      */
     public static function primaryKey()
     {
-        return ['code'];
+        return ['id'];
     }
 
     /**
@@ -28,7 +28,19 @@ class Instance extends ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'name', 'population'], 'required']
+            [
+                [
+                    'instanceId',
+                    'image',
+                    'command',
+                    'created',
+                    'state',
+                    'status',
+                    'ports',
+                    'networks'
+                ],
+                'required'
+            ],
         ];
     }
 }
